@@ -1,64 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yasmin Cosméticos</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        background: linear-gradient(to bottom right, #e0d4f7, #ffffff, #f2e6fa);
-        margin: 0;
-        padding: 0;
-        color: #5a267a;
-      }
-      header {
-        background: #5a267a;
-        color: white;
-        padding: 1rem;
-        text-align: center;
-      }
-      .produtos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        padding: 2rem;
-      }
-      .produto {
-        background: white;
-        border-radius: 1rem;
-        padding: 1rem;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
-      .botao {
-        background: #5a267a;
-        color: white;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 0.5rem;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Yasmin Cosméticos</h1>
-      <p>Roupas e cosméticos direto no seu WhatsApp!</p>
-    </header>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yasmin Cosméticos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
 
-    <section class="produtos">
-      <div class="produto">
-        <h2>Produto 1</h2>
-        <p>Descrição rápida do produto.</p>
-        <a class="botao" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Comprar</a>
-      </div>
-      <div class="produto">
-        <h2>Produto 2</h2>
-        <p>Mais um item incrível para você!</p>
-        <a class="botao" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Comprar</a>
-      </div>
-    </section>
-  </body>
+    header {
+      background-color: #5f27cd;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #341f97;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .banner {
+      width: 100%;
+      height: 250px;
+      background-image: url("https://images.unsplash.com/photo-1585577529540-48d3d7ef8ba5");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .categorias {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px 10px;
+      flex-wrap: wrap;
+    }
+
+    .categoria {
+      background-color: #f8f8f8;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .produto {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .produto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .produto h3 {
+      margin: 10px 0 5px;
+    }
+
+    .produto p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .produto .preco {
+      font-weight: bold;
+      color: #27ae60;
+      margin: 10px 0;
+    }
+
+    .produto a {
+      display: inline-block;
+      background-color: #5f27cd;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background: #341f97;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffdd59;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yasmin Cosméticos</h1>
+    <p>Cosméticos naturais e roupas estilosas direto pra você</p>
+  </header>
+
+  <nav>
+    <a href="#cosmeticos">Cosméticos</a>
+    <a href="#roupas">Roupas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="banner"></div>
+
+  <section class="categorias">
+    <div class="categoria">💄 Cosméticos</div>
+    <div class="categoria">👗 Roupas</div>
+    <div class="categoria">🌿 Naturais</div>
+    <div class="categoria">🔥 Promoções</div>
+  </section>
+
+  <section class="produtos" id="cosmeticos">
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1611152062612-9fbfdf0cf51b" alt="Sabonete Artesanal">
+      <h3>Sabonete Artesanal</h3>
+      <p>Feito com ingredientes 100% naturais e óleos essenciais.</p>
+      <p class="preco">R$ 19,90</p>
+      <a href="https://wa.me/SEUNUMEROAQUI?text=Gostei%20do%20sab%C3%A3o%20artesanal!">Comprar</a>
+    </div>
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1619983081563-430f636027e6" alt="Hidratante Natural">
+      <h3>Hidratante Natural</h3>
+      <p>Ideal para pele seca e sensível. Sem parabenos.</p>
+      <p class="preco">R$ 29,90</p>
+      <a href="https://wa.me/SEUNUMEROAQUI?text=Quero%20o%20hidratante%20natural!">Comprar</a>
+    </div>
+  </section>
+
+  <section class="produtos" id="roupas">
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1520975922203-6b92f6e0bde5" alt="Blusa Básica Feminina">
+      <h3>Blusa Básica</h3>
+      <p>Disponível em diversas cores e tamanhos. Algodão macio.</p>
+      <p class="preco">R$ 39,90</p>
+      <a href="https://wa.me/SEUNUMEROAQUI?text=Quero%20comprar%20a%20blusa%20b%C3%A1sica!">Comprar</a>
+    </div>
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1618354691267-7ed832f0c46a" alt="Vestido Estampado">
+      <h3>Vestido Estampado</h3>
+      <p>Confortável e estiloso para o dia a dia. Tecido leve.</p>
+      <p class="preco">R$ 59,90</p>
+      <a href="https://wa.me/SEUNUMEROAQUI?text=Tenho%20interesse%20no%20vestido%20estampado!">Comprar</a>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>Siga a gente no <a href="https://instagram.com/SEUINSTAGRAM" target="_blank">Instagram</a> | Contato: <a href="mailto:SEUEMAIL">SEUEMAIL</a></p>
+    <p>&copy; 2025 Yasmin Cosméticos. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
 </html>
