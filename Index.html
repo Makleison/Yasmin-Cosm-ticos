@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yasmin Cosméticos</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: linear-gradient(to bottom right, #e0d4f7, #ffffff, #f2e6fa);
+        margin: 0;
+        padding: 0;
+        color: #5a267a;
+      }
+      header {
+        background: #5a267a;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .produtos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 2rem;
+      }
+      .produto {
+        background: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .botao {
+        background: #5a267a;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Yasmin Cosméticos</h1>
+      <p>Roupas e cosméticos direto no seu WhatsApp!</p>
+    </header>
+
+    <section class="produtos">
+      <div class="produto">
+        <h2>Produto 1</h2>
+        <p>Descrição rápida do produto.</p>
+        <a class="botao" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Comprar</a>
+      </div>
+      <div class="produto">
+        <h2>Produto 2</h2>
+        <p>Mais um item incrível para você!</p>
+        <a class="botao" href="https://wa.me/SEUNUMEROAQUI" target="_blank">Comprar</a>
+      </div>
+    </section>
+  </body>
+</html>
